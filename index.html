@@ -266,7 +266,7 @@ body.menu-open .burger span:nth-child(3){ transform:translateY(-8px) rotate(-45d
 .testi-card{ background:var(--paper); border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm); border:1px solid var(--line); display:flex; flex-direction:column; gap:14px; }
 .testi-card .stars{ font-size:.95rem; }
 .testi-card blockquote{ margin:0; font-size:1.02rem; line-height:1.6; color:var(--ink); font-style:italic; }
-.testi-card footer{ font-weight:800; font-size:.85rem; color:var(--ink-soft); }
+.testi-card footer{ margin-top:auto; font-weight:800; font-size:.85rem; color:var(--ink-soft); }
 @media (max-width:900px){ .testi-grid{ grid-template-columns:1fr; } }
 
 /* ============ LOCATION ============ */
@@ -284,6 +284,11 @@ body.menu-open .burger span:nth-child(3){ transform:translateY(-8px) rotate(-45d
 .hours-table td:last-child{ text-align:right; color:var(--ink-soft); }
 .hours-table tr.today td{ color:var(--green-dark); }
 .peak-note{ margin-top:16px; background:#FFF4E8; border:1px solid rgba(244,132,30,.25); border-radius:14px; padding:12px 16px; font-size:.85rem; color:var(--orange-deep); font-weight:700; display:flex; gap:8px; align-items:flex-start; }
+@media (max-width:900px){
+  .loc-grid{ grid-template-columns:1fr; gap:24px; }
+  .loc-map{ min-height:340px; }
+  .loc-info{ padding:28px 24px; }
+}
 
 /* ============ FINAL CTA ============ */
 .final-cta{ background:linear-gradient(135deg,var(--green) 0%,var(--green-deep) 100%); color:#fff; border-radius:var(--radius-lg); padding:56px 40px; text-align:center; position:relative; overflow:hidden; }
@@ -295,7 +300,7 @@ body.menu-open .burger span:nth-child(3){ transform:translateY(-8px) rotate(-45d
 .paw-deco{ position:absolute; opacity:.12; }
 
 /* ============ FOOTER ============ */
-footer{ background:var(--green-deep); color:rgba(255,255,255,.78); padding-block:56px 28px; }
+body > footer{ background:var(--green-deep); color:rgba(255,255,255,.78); padding-block:56px 28px; }
 .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,.12); }
 .foot-logo{ display:flex; align-items:center; gap:10px; font-family:var(--ff-display); font-size:1.4rem; font-weight:700; color:#fff; margin-bottom:14px; }
 .foot-grid p{ font-size:.9rem; line-height:1.6; max-width:280px; }
@@ -326,6 +331,10 @@ footer{ background:var(--green-deep); color:rgba(255,255,255,.78); padding-block
 /* misc */
 .stack-tight > * + *{ margin-top:0; }
 .chip-pill{ display:inline-flex; align-items:center; gap:6px; background:#fff; border:1px solid var(--line); padding:6px 14px; border-radius:100px; font-size:.8rem; font-weight:800; color:var(--ink-soft); }
+@media (max-width:560px){
+  .btn{ white-space:normal; text-align:center; }
+  .testi-card{ padding:24px; }
+}
 </style>
 </head>
 <body>
